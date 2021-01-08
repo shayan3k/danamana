@@ -1,7 +1,11 @@
 import Layout from '../components/layouts/LayoutMain'
-import OwlCarousel from "react-owl-carousel";
+import React from "react";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(import("react-owl-carousel"), {
+ssr: false,
+});
 
 export default function Home() {
   return (
