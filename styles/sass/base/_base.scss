@@ -19,6 +19,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 html {
     box-sizing: border-box;
+    font-size:  62.5%;
+    @include respond-to(tablet-land) { //1200px
+        font-size:  56.25%; // 1rem 9px 9/16 56%
+    }
+    @include  respond-to(tablet) { // 900px
+        font-size:  50%; // 1rem 8 8/16 50%
+    }
 }
 
 body {
