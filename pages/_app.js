@@ -1,4 +1,5 @@
 // antd
+import '../styles/main.scss'
 import '../node_modules/antd/dist/antd.css';
 
 import { ConfigProvider } from 'antd';
