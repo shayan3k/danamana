@@ -1,0 +1,16 @@
+// abstracts
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/typographi";
+// custom bootstrap components and utilities
+@import "./sass/base/base";
+// custom bootstrap components and utilities
+@import "./sass/custom/colors";
+@import "./sass/custom/images";
+@import "./sass/base/utilities";
+
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Swiper styles
+@import '~swiper/swiper.scss';
+// custom styles
+@import './sass/custom/styles';

@@ -1,0 +1,18 @@
+$theme-colors: (
+  "primary": #DAA520,
+  "danger":  #D42727,
+  "gray":    #f0f2f5,
+  "success": #54BF4C,
+  "black":   #000,
+  "darkgray": #dfdede,
+  "grayultra": #777,
+  "gold":  #DAA520
+);
+
+
+// gradients
+
+.gold {
+    color: linear-gradient(235deg, rgb(194, 173, 84) 0%, rgb(19, 18, 18) 100%);
+    background-color: linear-gradient(235deg, rgb(194, 173, 84) 0%, rgb(19, 18, 18) 100%);
+}

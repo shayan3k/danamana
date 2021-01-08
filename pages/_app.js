@@ -1,8 +1,15 @@
-import '../styles/globals.scss'
-import 'fontsource-roboto';
+// antd
+import '../node_modules/antd/dist/antd.css';
+
+import { ConfigProvider } from 'antd';
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+      <ConfigProvider>
+        <Component {...pageProps} />
+      </ConfigProvider>
+  )
 }
 
 export default MyApp

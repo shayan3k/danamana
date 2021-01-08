@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/system": "^4.11.2",
+    "@ant-design/icons": "^4.3.0",
+    "antd": "^4.10.0",
+    "bootstrap": "^5.0.0-beta1",
     "fontsource-roboto": "^4.0.0",
     "next": "10.0.4",
     "node-sass": "^4.14.1",
