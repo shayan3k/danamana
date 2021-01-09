@@ -8,10 +8,10 @@ import CategoriesCard from '../containers/cards/CategoriesCard'
 function AmusementPark(props) {
 
     const [categories , setCategories] = useState([
-        {src: "/assets/icon/exchange.png" , title:"تعویض اسباب بازی"},
-        {src: "/assets/icon/monster-factory.png" , title:"سفارش اسباب بازی"},
-        {src: "/assets/icon/docter_flint.png" , title:"دکتر اسباب بازی"},
-        {src: "/assets/icon/babyboss.png" , title:"مشاوره روان شناسی کودک"},
+        {src: "/assets/icon/exchange.png" , title:"تعویض اسباب بازی", color: 'blue'},
+        {src: "/assets/icon/monster-factory.png" , title:"سفارش اسباب بازی", color: 'purple'},
+        {src: "/assets/icon/docter_flint.png" , title:"دکتر اسباب بازی", color: 'success'},
+        {src: "/assets/icon/babyboss.png" , title:"مشاوره روان شناسی کودک", color: 'primary'},
     ])
     return (
         <Layout>
