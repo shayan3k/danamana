@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Base Content */}
-      <h1>سلام بچهای کیری خوش امدید کونی ها</h1>
+      <h1>به نام خدا</h1>
     </Layout>
   )
 }
