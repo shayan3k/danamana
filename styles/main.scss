@@ -1,21 +1,29 @@
-// // abstracts
-// @import "./sass/abstracts/variables";
-// @import "./sass/abstracts/mixins";
-// @import "./sass/abstracts/typographi";
-// // custom bootstrap components and utilities
-// @import "./sass/base/base";
-// // custom bootstrap components and utilities
-// @import "./sass/custom/images";
-// @import "./sass/base/utilities";
-
-// // bootstrap
-// @import "~bootstrap/scss/bootstrap";
-// // custom styles
-// @import './sass/custom/styles';
 @font-face {
-    font-family: 'dimona' !important;
-    src: url('./fonts/dimona.ttf') format('truetype');
+    font-family: 'BDimona';
+    src: url('/assets/fonts/Far_Dimona/Far_Dimona.ttf') format('truetype'),
 }
-body {
-    font-family: 'dimona' !important;
+
+@font-face {
+    font-family: 'RDimona';
+    src: url('/assets/fonts/dimona/dimona.ttf') format('truetype'),
 }
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('/assets/fonts/Yekan/Yekan.ttf') format('truetype'),
+}
+
+// abstracts
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/typographi";
+// custom bootstrap components and utilities
+@import "./sass/base/base";
+// custom bootstrap components and utilities
+@import "./sass/custom/images";
+@import "./sass/base/utilities";
+
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+// custom styles
+@import './sass/custom/styles';
