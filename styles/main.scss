@@ -1,14 +1,21 @@
-// abstracts
-@import "./sass/abstracts/mixins";
-@import "./sass/abstracts/typographi";
-// custom bootstrap components and utilities
-@import "./sass/base/base";
-// custom bootstrap components and utilities
-@import "./sass/custom/colors";
-@import "./sass/custom/images";
-@import "./sass/base/utilities";
+// // abstracts
+// @import "./sass/abstracts/variables";
+// @import "./sass/abstracts/mixins";
+// @import "./sass/abstracts/typographi";
+// // custom bootstrap components and utilities
+// @import "./sass/base/base";
+// // custom bootstrap components and utilities
+// @import "./sass/custom/images";
+// @import "./sass/base/utilities";
 
-// bootstrap
-@import "~bootstrap/scss/bootstrap";
-// custom styles
-@import './sass/custom/styles';
+// // bootstrap
+// @import "~bootstrap/scss/bootstrap";
+// // custom styles
+// @import './sass/custom/styles';
+@font-face {
+    font-family: 'dimona' !important;
+    src: url('./fonts/dimona.ttf') format('truetype');
+}
+body {
+    font-family: 'dimona' !important;
+}

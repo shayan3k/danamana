@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Base Content */}
+      <h1>سلام بچهای کیری خوش امدید کونی ها</h1>
       <OwlCarousel className="owl-theme" loop margin={10} nav>
         <div class="item">
           <h4>1</h4>
