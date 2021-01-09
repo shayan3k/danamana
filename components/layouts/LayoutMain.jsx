@@ -7,7 +7,7 @@ function LayoutMain(props) {
             {/* Header */}
             {/* Siderbar */}
 
-            <main id='base-content'>
+            <main className="position-relative vh-100"  id='base-content'>
                 {props.children}
             </main>
 
