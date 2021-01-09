@@ -6,7 +6,7 @@ export default function CategoriesCard({ categories }) {
         <Row justify="center" gutter={[0, 0]}>
         {
             categories.map((data) => {
-                return <Col span={20}><CategoryCard src={data.src} title={data.title} /></Col>
+                return <Col span={20} key={data.id}><CategoryCard src={data.src} title={data.title} /></Col>
             })
         }
         </Row>
