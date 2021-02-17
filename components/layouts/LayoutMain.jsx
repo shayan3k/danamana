@@ -4,17 +4,24 @@ import React from 'react'
 import Header from './Includes/Header'
 import Footer from './Includes/Footer'
 
-function LayoutMain(props) {
-  return (
-    <div id='application'>
-      <Header />
-      {/* Siderbar */}
-      <main className="position-relative vh-100"  id='base-content'>
-        {props.children}
-      </main>
-      <Footer />
-    </div>
-  )
+const BaseComponenet = (Slot) => {
+  class LayoutMain extends React.Component {
+    constructor(props) {
+      super(props)
+    }
+    render() {
+      return (
+        <div>
+          <Header />
+          <div>
+            <Slot />
+          </div>
+          <Footer />
+        </div>
+      )
+    }
+  }
+  return LayoutMain
 }
 
-export default LayoutMain
+export default BaseComponenet

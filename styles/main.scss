@@ -23,7 +23,10 @@
 @import "./sass/custom/images";
 @import "./sass/base/utilities";
 
-// bootstrap
-@import "~bootstrap/scss/bootstrap";
+// tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // custom styles
 @import './sass/custom/styles';

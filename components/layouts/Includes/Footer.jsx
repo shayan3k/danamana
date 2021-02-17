@@ -7,21 +7,20 @@ import { useRouter } from "next/router";
 function Footer(props) {
   const router = useRouter()
   return (
-    <div id='footer' className="w-100">
       <div className="
-        dir-r
-        border-top-sm
-        p-2
-        d-flex
-        align-items-center
-        justify-content-around
+        rounded-t-3xl
         bg-white
-        position-fixed
-        w-100
-        z-100
-        bottom-0
+        absolute
+        -bottom-0
+        dir-r
+        flex
+        items-center
+        justify-between
+        w-full
+        py-4
+        px-8
+        shadow-t-s
         fs-x5
-        rounded-xl-top
       ">
         <Link href="/">
           <div className="navigation-hover">
@@ -51,7 +50,7 @@ function Footer(props) {
               src="/assets/icon/plus.png" 
               className={`
                 ${ router.pathname == "/orders/histories" ? 'is-selected' : ""} 
-                nav-icons
+                
                 nav-icon-plus
               `} 
             />
@@ -80,7 +79,6 @@ function Footer(props) {
           </div>
         </Link>
       </div>
-    </div>
   )
 }
 

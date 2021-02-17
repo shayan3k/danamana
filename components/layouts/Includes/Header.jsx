@@ -10,21 +10,23 @@ export default function Header(props) {
   return (
     <div
         className="
-          align-items-center 
-          d-flex 
-          justify-content-between 
-          site-page-header 
-          shadow-sm
+          flex
+          items-center
+          justify-between
+          p-4
+          shadow-md	
+          site-page-header
           fs-x5
-          p-4">
+          rounded-b-3xl
+        ">
         <div>
-          <img className="icons" src="/assets/icon/search.png" alt="search icon"/>
+          <img className="nav-icons " src="/assets/icon/search.png" alt="search icon"/>
         </div>
         <div>
           <div >{props.title || 'دانامانا'}</div>
         </div>
-        <div className="d-flex align-items-center">
-          <img className="icons" src="/assets/icon/hamburger.png" alt="hamburger menu"/>
+        <div className="flex items-center">
+          <img className="nav-icons" src="/assets/icon/hamburger.png" alt="hamburger menu"/>
         </div>
     </div>
   )
