@@ -8,6 +8,7 @@ function Footer(props) {
   const router = useRouter()
   return (
       <div className="
+        border-top-blue
         rounded-t-3xl
         bg-white
         absolute

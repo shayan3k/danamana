@@ -18,6 +18,8 @@ export default function Header(props) {
           site-page-header
           fs-x5
           rounded-b-3xl
+          border-bottom-blue
+          text-primary
         ">
         <div>
           <img className="nav-icons " src="/assets/icon/search.png" alt="search icon"/>

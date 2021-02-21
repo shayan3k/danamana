@@ -52,7 +52,7 @@
 }
 
 .nav-icon-plus {
-  height: 50px;
+  height: 45px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   transform: translate(-50%, -50px);
@@ -64,18 +64,43 @@
   border-radius: 100px;
   display: flex;
   box-shadow: 0px 0px 3px 1px rgba(0,0,0,.3);
-  @include respond-to(phone) {
-    height: 40px;
-    transform: translate(-50%, -40px);
-  }
   &:hover {
-    height: 55px;
+    height: 50px;
   }
   &:active {
-    height: 50px;
+    height: 45px;
   }
 }
 
 .is-selected {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.page-image {
+  width: 200px;
+  @include respond-to(phone) {
+    width: 160px;
+  }
+}
+
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0.9;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
 }

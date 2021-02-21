@@ -6,23 +6,60 @@ const OwlCarousel = dynamic(import("react-owl-carousel"), {
 ssr: false,
 });
 
-export default function DetailsCart() {
+// ant
+import { Col } from 'antd'
+
+export default function DetailsCart({data}) {
+  const  responsive={
+    0:{
+        items:1
+    },
+    600:{
+        items:2
+    },
+
+    900:{
+        items:3.3
+    },
+    1000:{
+        items:4.3
+    },
+  }
   return (
-    <div className="text-right">
-      {/* <OwlCarousel className="owl-theme" items={1} center={true} autoplay={true}    autoplayTimeout={2000} autoplayHoverPause={true} loop={true}>
-        <div class='item'>
-          <h4>11</h4>
-        </div>
-        <div class='item'>
-          <h4>2</h4>
-        </div>
-      </OwlCarousel> */}
-      <div className="p-4">
-        <h4>جزئیات</h4>
-        <p>
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
-      </div>
+    <div 
+      className="my-4 text-center text-2xl">
+        {
+          data && 
+          data.map((data, index) => {
+            return (
+              <div key={index}>
+                <OwlCarousel 
+                  className="owl-theme"
+                  margin={10}
+                  items={1} 
+                  center={true} 
+                  autoplay={true}
+                  autoplayTimeout={2000} 
+                  autoplayHoverPause={true} 
+                  loop={true}
+                  responsive={responsive}
+                  >
+                  {
+                    data.gallery.map((image, index) => {
+                      return <img style={{height: '220px'}} key={index} src={image} alt="image"/>
+                    })
+                  }
+                </OwlCarousel>
+                <div className="p-4 text-right">
+                  <h4 className="text-3xl">{data.title}</h4>
+                  <p>
+                    {data.desc}
+                  </p>
+                </div>
+              </div>
+            )
+          })
+        }
     </div>
   )
 }
