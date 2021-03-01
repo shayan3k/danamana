@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 // componenets
-import PrimaryButton from '../buttons/PrimaryButton'
+import PrimaryButton from '../Buttons/PrimaryButton'
 
 export default function Moshavere(props) {
 
@@ -11,6 +11,10 @@ export default function Moshavere(props) {
     let inputValue = event.target.value
     let inputName = event.target.name
     setMessage(prev => ({...prev, [inputName]: inputValue}))
+  }
+  const submit = (event) => {
+    event.preventDefault()
+    console.log('message',message);
   }
 
   return (
@@ -24,7 +28,7 @@ export default function Moshavere(props) {
       }}
     >
       <h3 className="text-5xl text-purpule absolute top-10 right-5">{props.title || 'بدون عنوان'}</h3>
-      <form action="submit">
+      <form onSubmit={submit}>
         <div className=" flex justify-between items-center">
           <div>
             <input 
@@ -42,7 +46,7 @@ export default function Moshavere(props) {
           className="details rounded p-3 w-full"
           placeholder="جزئیات"></textarea>
           <div className="text-center w-full my-6">
-            <PrimaryButton text="ثبت درخواست " />
+            <PrimaryButton type="submit" text="ثبت درخواست " />
           </div>
       </form>
     </div>

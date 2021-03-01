@@ -2,15 +2,15 @@ import React from 'react'
 
 // components
 import PrimaryButton from '../Buttons/PrimaryButton'
-import Title from '../Typography/PrimaryTitle'
+import Title from '../Typography/Title'
 
 // OwlCarousel
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {
-ssr: false,
+  ssr: false,
 });
 
-export default function CategorySingle(props) {
+export default function CategorySlider(props) {
   const  responsive={
     0:{
         items:2.3
@@ -28,7 +28,7 @@ export default function CategorySingle(props) {
   }
   return (
     <div 
-      className="text-center text-2xl"
+      className="text-center text-2xl h-full"
       style={{
         background: 'url(/assets/img/dreamy-soft-clouds.png)',
         backgroundSize: 'cover',
@@ -41,7 +41,7 @@ export default function CategorySingle(props) {
           props.data.map((data, index) => {
             return (
               <div key={index}>
-                <h3 className="text-6xl pt-5 pb-10 text-right">{data.title}</h3>
+                <Title title={props.title} />
                 <OwlCarousel 
                   className="owl-theme"
                   margin={10}
@@ -52,15 +52,19 @@ export default function CategorySingle(props) {
                   autoplayHoverPause={true} 
                   loop={true}
                   responsive={responsive}
-                  >
+                >
                   {
                     props.data[0].gallery.map((image, index) => {
                       return <img style={{height: '220px'}} key={index} src={image} alt="image"/>
                     })
                   }
                 </OwlCarousel>
-                <div className="p-4">
-                  <PrimaryButton text={props.text}/>
+                <div className="px-16 pt-16">
+                  <PrimaryButton
+                    color={'white'}
+                    bg={'red'}
+                    text={props.text}
+                  />
                 </div>
               </div>
             )

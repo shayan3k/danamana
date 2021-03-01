@@ -11,9 +11,9 @@ const BaseComponenet = (Slot) => {
     }
     render() {
       return (
-        <div className="container">
+        <div className=" h-screen overflow-hidden">
           <Header />
-          <div className=" relative min-h-full" >
+          <div className="relative h-full" >
             <Slot />
           </div>
           <Footer />

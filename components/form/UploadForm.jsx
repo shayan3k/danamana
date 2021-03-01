@@ -4,8 +4,8 @@ import React, {useState} from 'react'
 import {AiOutlinePlusCircle} from 'react-icons/ai'
 
 // componenets
-import PrimaryButton from '../buttons/PrimaryButton'
-import PrimaryTitle from '../typography/PrimaryTitle'
+import PrimaryButton from '../Buttons/PrimaryButton'
+import PrimaryTitle from '../Typography/PrimaryTitle'
 
 export default function UploadForm(props) {
   const [message, setMessage] = useState('')
@@ -28,6 +28,11 @@ export default function UploadForm(props) {
     setMessage(userInfo => ({...userInfo, [event.target.name]: event.target.files[0]}));
   }
 
+  const submit = (event) => {
+    event.preventDefault()
+    console.log('message',message);
+  }
+
   return (
     <div
       className="bkg dir-r text-2xl p-4 relative h-full"
@@ -39,7 +44,7 @@ export default function UploadForm(props) {
       }}
     >
       <PrimaryTitle title={props.title}/>
-      <form className="mt-16" action="submit">
+      <form className="mt-16" onSubmit={submit}>
         <div className="flex justify-between items-center">
           <div>
             <div className="flex content-center items-center text-center">
@@ -67,7 +72,7 @@ export default function UploadForm(props) {
           className="details rounded p-3 w-full"
           placeholder="جزئیات"></textarea>
           <div className="text-center w-full my-6">
-            <PrimaryButton text="ثبت درخواست " />
+            <PrimaryButton type="submit" text="ثبت درخواست " />
           </div>
       </form>
     </div>

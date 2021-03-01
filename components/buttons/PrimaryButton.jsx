@@ -14,7 +14,6 @@ export default function PrimaryButton(props) {
         px-14
         w-full
         rounded
-        ${props.bg ? props.bg : 'bg-purpule'}
       `}
     >
       {props.text}

@@ -121,6 +121,12 @@
   -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
 }
 
+.shadow-xxs {
+  box-shadow: 0px 0px 2px 0px rgba(175, 118, 118, 0.5);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+
 .shadow-xs {
   box-shadow: 0px 0px 8px 0px rgba(175, 118, 118, 0.5);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
@@ -166,7 +172,7 @@
   width: 100%;
 }
 
-// 
+// grid-gap
 .grid-gap-sm {
   grid-gap: 10px !important;
 }
