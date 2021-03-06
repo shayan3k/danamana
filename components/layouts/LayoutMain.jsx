@@ -1,19 +1,27 @@
 import React from 'react'
 
+// Header
+import Header from './Includes/Header'
+import Footer from './Includes/Footer'
 
-function LayoutMain(props) {
-    return (
-        <div id='application'>
-            {/* Header */}
-            {/* Siderbar */}
-
-            <main className="position-relative vh-100"  id='base-content'>
-                {props.children}
-            </main>
-
-            {/* Footer */}
+const BaseComponenet = (Slot) => {
+  class LayoutMain extends React.Component {
+    constructor(props) {
+      super(props)
+    }
+    render() {
+      return (
+        <div className=" h-screen overflow-hidden">
+          <Header />
+          <div className="relative h-full overflow-y-scroll" >
+            <Slot />
+          </div>
+          <Footer />
         </div>
-    )
+      )
+    }
+  }
+  return LayoutMain
 }
 
-export default LayoutMain
+export default BaseComponenet

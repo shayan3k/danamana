@@ -2,11 +2,15 @@ import React , {useState} from "react";
 
 // components
 import Layout from '../components/layouts/LayoutMain.jsx'
-import Cart from '../components/carts/CartRow'
+import CategoryRow from '../components/Categories/CategoryRow'
+import Title from '../components/Typography/Title'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+
+// icons
+import { FaExchangeAlt, FaCheckCircle } from 'react-icons/fa'
 
 function Home() {
 
@@ -22,8 +26,11 @@ function Home() {
   ])
 
   return (
-    <div className="p-10 mb-20 md:mb-52">
-      <Cart text="مدلینگ" data={card}/>
+    <div className="text-right px-10">
+      <Title font={'6xl'} title="شهر تولد"/>
+      <CategoryRow text="تعویض تم تولد" icon={<FaExchangeAlt />} data={card}/>
+      <CategoryRow text="ثبت سفارش تم دلخواه" icon={<FaExchangeAlt />} data={card}/>
+      <CategoryRow text="مشاوره خدمات تولد" color="purple-800" icon={<FaCheckCircle />} data={card}/>
     </div>
   )
 }
