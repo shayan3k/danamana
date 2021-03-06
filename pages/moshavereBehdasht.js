@@ -1,7 +1,7 @@
 import React , {useState} from "react";
 
 // components
-import Layout from '../components/layouts/LayoutMain.jsx'
+import Layout from '../components/Layouts/LayoutMain.jsx'
 import Moshavere from '../components/Form/Moshavere'
 
 // OwlCarousel

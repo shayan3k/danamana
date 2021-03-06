@@ -1,8 +1,8 @@
 import React , {useState} from "react";
 
 // components
-import Layout from '../components/layouts/LayoutMain.jsx'
-import Cart from '../components/carts/CartRow'
+import Layout from '../components/Layouts/LayoutMain.jsx'
+import Cart from '../components/Carts/CartRow'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";

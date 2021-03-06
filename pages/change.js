@@ -1,8 +1,8 @@
 import React , {useState} from "react";
 
 // components
-import Layout from '../components/layouts/LayoutMain.jsx'
-import UploadForm from '../components/form/UploadForm'
+import Layout from '../components/Layouts/LayoutMain.jsx'
+import UploadForm from '../components/Form/UploadForm'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";

@@ -1,15 +1,15 @@
 import React , {useState} from "react";
 
 // components
-import Layout from '../components/layouts/LayoutMain.jsx'
-import Cart from '../components/carts/CartRow'
+import Layout from '../components/Layouts/LayoutMain.jsx'
+import Cart from '../components/Carts/CartRow'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Home() {
-  
+
   const [card, setCard] = useState([
     {title: 'متن پیشنها ', desc: ' متن پیشنهادیمتن پیشنهادیمتن پیشنهادی'},
     {title: 'متن', desc: ' متن پیشنهادیمتن پیشنهادیمتن پیشنهادی'},

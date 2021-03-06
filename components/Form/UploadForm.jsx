@@ -63,7 +63,7 @@ export default function UploadForm(props) {
                 onChange={changeImage} />
             </div>
             <div className="text-3xl text-center" >آپلود عکس</div>
-          </div> 
+          </div>
           <img className="page-image" src="/assets/img/babybos.png" alt=""/>
         </div>
         <textarea
@@ -72,7 +72,7 @@ export default function UploadForm(props) {
           onChange={onchange}
           className="details p-3 w-full rounded-2xl border border-black border-opacity-60"
           placeholder="جزئیات"></textarea>
-        <input 
+        <input
           className="
             details
             px-3
@@ -82,7 +82,7 @@ export default function UploadForm(props) {
             border
             border-black
             border-opacity-60"
-          type="text" 
+          type="text"
           placeholder="پیشنهاد"
         />
           <div className="text-center w-full my-6">

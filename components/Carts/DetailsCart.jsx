@@ -3,11 +3,11 @@ import React from 'react'
 // OwlCarousel
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {
-ssr: false,
+  ssr: false,
 });
 
 // components
-import Button from '../buttons/PrimaryButton'
+import Button from '../Buttons/PrimaryButton'
 
 export default function DetailsCart({data}) {
   const  responsive={
@@ -26,21 +26,21 @@ export default function DetailsCart({data}) {
     },
   }
   return (
-    <div 
+    <div
       className="my-4 text-center text-2xl">
         {
-          data && 
+          data &&
           data.map((data, index) => {
             return (
               <div key={index}>
-                <OwlCarousel 
+                <OwlCarousel
                   className="owl-theme"
                   margin={10}
-                  items={1} 
-                  center={true} 
+                  items={1}
+                  center={true}
                   autoplay={true}
-                  autoplayTimeout={2000} 
-                  autoplayHoverPause={true} 
+                  autoplayTimeout={2000}
+                  autoplayHoverPause={true}
                   loop={true}
                   responsive={responsive}
                 >
