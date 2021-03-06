@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function CategoryRow(props) {
   return (
-    <Link href="/">
+    <Link href="/change">
       <div
         className={`
           rtl
@@ -21,7 +21,7 @@ export default function CategoryRow(props) {
           cursor-pointer
           text-${props.color ? props.color : 'yellow-500'}
         `}>
-          <div>{props.text || 'تعویض لاوزم ورزشی'}</div>
+          <div>{props.text || 'تعویض لوازم ورزشی'}</div>
           <div className="pl-10">{props.icon}</div>
       </div>
     </Link>

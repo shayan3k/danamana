@@ -26,7 +26,7 @@ function Footer(props) {
         <Link href="/">
           <div className="navigation-hover">
               <img 
-                src="/assets/icon/home.png" 
+                src="/assets/icon/home.png"
                 className={`
                   ${ router.pathname == "/" ? 'is-selected' : ""}
                   nav-icons
@@ -34,46 +34,45 @@ function Footer(props) {
               />
           </div>
         </Link>
-        <Link href="/orders/histories">
+        <Link href="/categories">
           <div className="navigation-hover">
             <img 
               src="/assets/icon/phone.png" 
               className={`
-                ${ router.pathname == "/orders/histories" ? 'is-selected' : ""} 
+                ${ router.pathname == "/categories" ? 'is-selected' : ""} 
                 nav-icons
               `} 
             />
           </div>
         </Link>
-        <Link href="/orders/histories">
+        <Link href="/moshavere">
           <div className="navigation-hover">
             <img 
               src="/assets/icon/plus.png" 
               className={`
-                ${ router.pathname == "/orders/histories" ? 'is-selected' : ""} 
-                
+                ${ router.pathname == "/moshavere" ? 'selected-nav-icon-plus' : ""} 
                 nav-icon-plus
               `} 
             />
           </div>
         </Link>
-        <Link href="/orders/histories">
+        <Link href="/birthday-city">
           <div className="navigation-hover">
             <img 
-              src="/assets/icon/social.png" 
+              src="/assets/icon/social.png"
               className={`
-                ${ router.pathname == "/orders/histories" ? 'is-selected' : ""} 
+                ${ router.pathname == "/birthday-city" ? 'is-selected' : ""} 
                 nav-icons
               `} 
             />
           </div>
         </Link>
-        <Link href="/">
+        <Link href="/artcity">
           <div className="navigation-hover hover">
             <img 
               src="/assets/icon/profile.png" 
               className={`
-                ${ router.pathname == "/profile" ? 'is-selected' : ""}
+                ${ router.pathname == "/artcity" ? 'is-selected' : ""}
                 nav-icons
               `}
             />

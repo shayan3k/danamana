@@ -2,7 +2,7 @@ import React , {useState} from "react";
 
 // components
 import Layout from '../components/Layouts/LayoutMain.jsx'
-import Cart from '../components/Carts/CartRow'
+import CartRow from '../components/Carts/CartRow'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <div className="p-10 mb-20 md:mb-52">
-      <Cart text="مدلینگ" data={card}/>
+      <CartRow text="مدلینگ" data={card}/>
     </div>
   )
 }

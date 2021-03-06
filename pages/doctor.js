@@ -2,7 +2,7 @@ import React , {useState} from "react";
 
 // components
 import Layout from '../components/Layouts/LayoutMain.jsx'
-import DetailsCard from '../components/Carts/DetailsCart'
+import UploadForm from '../components/Form/UploadForm'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -22,9 +22,9 @@ function Home() {
   ])
 
   return (
-    <>
-      <DetailsCard data={card}/>
-    </>
+    <div className="mb-20 md:mb-52">
+      <UploadForm title="تعویض لوازم ورزشی" />
+    </div>
   )
 }
 

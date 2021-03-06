@@ -3,6 +3,9 @@ import React from 'react'
 // ant
 import { Col, Row } from 'antd'
 
+// next 
+import Link from 'next/link'
+
 export default function CartRow({data}) {
   return (
     <Row justify="center grid-gap-sm" >
@@ -23,13 +26,15 @@ export default function CartRow({data}) {
                 border-opacity-60
                 rounded-2xl
               "> 
-              <div className="flex justify-between text-right p-3">
-                <img className="image-card" src="/assets/img/default.jpg" alt="default.jpg"/>
-                <div className="pl-3 text-3xl text-yellow-400">
-                  <h3 className="text-4xl pb-3 text-yellow-400">{data.title}</h3>
-                  <p>{data.desc}</p>
+              <Link href="/details">
+                <div className="flex justify-between text-right p-3">
+                  <img className="image-card" src="/assets/img/default.jpg" alt="default.jpg"/>
+                  <div className="pl-3 text-3xl text-yellow-400">
+                    <h3 className="text-4xl pb-3 text-yellow-400">{data.title}</h3>
+                    <p>{data.desc}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </Col>
           )
         })
