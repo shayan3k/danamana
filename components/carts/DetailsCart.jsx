@@ -6,8 +6,8 @@ const OwlCarousel = dynamic(import("react-owl-carousel"), {
 ssr: false,
 });
 
-// ant
-import { Col } from 'antd'
+// components
+import Button from '../buttons/PrimaryButton'
 
 export default function DetailsCart({data}) {
   const  responsive={
@@ -43,18 +43,24 @@ export default function DetailsCart({data}) {
                   autoplayHoverPause={true} 
                   loop={true}
                   responsive={responsive}
-                  >
+                >
                   {
                     data.gallery.map((image, index) => {
                       return <img style={{height: '220px'}} key={index} src={image} alt="image"/>
                     })
                   }
                 </OwlCarousel>
-                <div className="p-4 text-right">
-                  <h4 className="text-3xl">{data.title}</h4>
+                <div className="p-4 text-right text-3xl">
+                  <h4 className="text-3xl font-semibold">{data.title}</h4>
                   <p>
                     {data.desc}
                   </p>
+                  <div className="pt-10 font-semibold">
+                    <p>پیشنهاد: با کتاب معمایی</p>
+                  </div>
+                  <div className="pt-10">
+                    <Button bg="green-400" rounded=" rounded-full" text="اطلاعات تماس"/>
+                  </div>
                 </div>
               </div>
             )

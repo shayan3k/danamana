@@ -66,13 +66,27 @@ export default function UploadForm(props) {
           </div> 
           <img className="page-image" src="/assets/img/babybos.png" alt=""/>
         </div>
-        <textarea 
+        <textarea
+          style={{resize: 'none', height: '160px'}}
           name="text"
           onChange={onchange}
-          className="details rounded p-3 w-full"
+          className="details p-3 w-full rounded-2xl border border-black border-opacity-60"
           placeholder="جزئیات"></textarea>
+        <input 
+          className="
+            details
+            px-3
+            py-5
+            w-full
+            rounded-2xl
+            border
+            border-black
+            border-opacity-60"
+          type="text" 
+          placeholder="پیشنهاد"
+        />
           <div className="text-center w-full my-6">
-            <PrimaryButton type="submit" text="ثبت درخواست " />
+            <PrimaryButton bg="blue-500" type="submit" text="ثبت درخواست " />
           </div>
       </form>
     </div>

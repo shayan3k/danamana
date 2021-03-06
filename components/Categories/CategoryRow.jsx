@@ -14,13 +14,12 @@ export default function CategoryRow(props) {
           shadow-xxs
           justify-end
           flex
-          px-20
+          px-10
           py-5
           text-4xl
           my-7
-          mx-10
           cursor-pointer
-          text-${props.color ? porps.color : 'yellow-300'}
+          text-${props.color ? props.color : 'yellow-500'}
         `}>
           <div>{props.text || 'تعویض لاوزم ورزشی'}</div>
           <div className="pl-10">{props.icon}</div>

@@ -41,10 +41,12 @@ export default function CategorySlider(props) {
           props.data.map((data, index) => {
             return (
               <div key={index}>
-                <Title title={props.title} />
+                <div className="pb-20">
+                  <Title title={props.title} />
+                </div>
                 <OwlCarousel 
                   className="owl-theme"
-                  margin={10}
+                  margin={20}
                   items={1} 
                   center={true} 
                   autoplay={true}
@@ -59,10 +61,12 @@ export default function CategorySlider(props) {
                     })
                   }
                 </OwlCarousel>
-                <div className="px-16 pt-16">
+                <div className="px-16 pt-20">
                   <PrimaryButton
-                    color={'white'}
-                    bg={'red'}
+                    color={'pink-700'}
+                    bg={'white'}
+                    opacity={'bg-opacity-50'}
+                    border
                     text={props.text}
                   />
                 </div>

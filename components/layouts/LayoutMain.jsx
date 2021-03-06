@@ -13,7 +13,7 @@ const BaseComponenet = (Slot) => {
       return (
         <div className=" h-screen overflow-hidden">
           <Header />
-          <div className="relative h-full" >
+          <div className="relative h-full overflow-y-scroll" >
             <Slot />
           </div>
           <Footer />

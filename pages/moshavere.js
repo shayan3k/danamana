@@ -2,11 +2,12 @@ import React , {useState} from "react";
 
 // components
 import Layout from '../components/layouts/LayoutMain.jsx'
-import Cart from '../components/carts/CartRow'
+import Moshavere from '../components/Form/Moshavere'
 
 // OwlCarousel
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+
 
 function Home() {
 
@@ -22,9 +23,9 @@ function Home() {
   ])
 
   return (
-    <div className="p-10 mb-20 md:mb-52">
-      <Cart text="مدلینگ" data={card}/>
-    </div>
+    <>
+      <Moshavere title="مشاوره و راهنمایی" data={card}/>
+    </>
   )
 }
 

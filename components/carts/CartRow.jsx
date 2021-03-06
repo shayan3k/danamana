@@ -14,12 +14,19 @@ export default function CartRow({data}) {
               sm={24}
               md={10}
               lg={6}
-              className="my-4 shadow-md gutter-row"
-            > 
-              <div className=" flex justify-between text-right p-3">
+              className=" mx-0 md:mx-5
+                mb-2
+                shadow-md
+                gutter-row
+                border
+                border-black
+                border-opacity-60
+                rounded-2xl
+              "> 
+              <div className="flex justify-between text-right p-3">
                 <img className="image-card" src="/assets/img/default.jpg" alt="default.jpg"/>
-                <div className="pl-3">
-                  <h3 className="text-2xl pb-3">{data.title}</h3>
+                <div className="pl-3 text-3xl text-yellow-400">
+                  <h3 className="text-4xl pb-3 text-yellow-400">{data.title}</h3>
                   <p>{data.desc}</p>
                 </div>
               </div>

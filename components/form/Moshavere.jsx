@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 // componenets
 import PrimaryButton from '../Buttons/PrimaryButton'
-
+import Title from '../Typography/Title'
 export default function Moshavere(props) {
 
   const [message, setMessage] = useState('')
@@ -27,25 +27,28 @@ export default function Moshavere(props) {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <h3 className="text-5xl text-purpule absolute top-10 right-5">{props.title || 'بدون عنوان'}</h3>
+      <div className="absolute top-5 right-5">
+        <Title title={props.title}/>
+      </div>
       <form onSubmit={submit}>
         <div className=" flex justify-between items-center">
           <div>
             <input 
               name="title"
               onChange={onchange}
-              className="rounded p-3"
+              className="rounded-2xl border border-black border-opacity-60 p-3 w-full"
               type="text"
               placeholder="موضوع"/>
           </div>
           <img className="page-image" src="/assets/img/babybos.png" alt=""/>
         </div>
-        <textarea 
+        <textarea
+          style={{resize: 'none', height: '200px'}}
           name="text"
           onChange={onchange}
-          className="details rounded p-3 w-full"
+          className="details rounded-2xl border border-black border-opacity-60 p-3 w-full"
           placeholder="جزئیات"></textarea>
-          <div className="text-center w-full my-6">
+          <div className="text-center w-full mt-10">
             <PrimaryButton type="submit" text="ثبت درخواست " />
           </div>
       </form>
