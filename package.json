@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "test": "echo 'Running Standard.js and Jasmine unit tests...\n' && yarn lint && yarn unit",
+    "unit": "jasmine",
+    "lint": "standard",
+    "fix": "standard --fix",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "preexport": "npm run build",
+    "export": "next build && next export",
+    "heroku-postbuild": "npm run build",
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
