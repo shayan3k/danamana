@@ -1,1 +1,1 @@
-web: next start -p $PORT
+web: npm install && next start -p $PORT

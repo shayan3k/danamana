@@ -1,6 +1,7 @@
 {
   "name": "kindergarten",
   "version": "0.1.0",
+  "license": "GPLV3",
   "private": true,
   "scripts": {
     "test": "echo 'Running Standard.js and Jasmine unit tests...\n' && yarn lint && yarn unit",
